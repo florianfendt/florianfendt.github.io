@@ -1,13 +1,3 @@
 theme: jekyll-theme-architect
 # This is the default format.
 # For more see: http://jekyllrb.com/docs/permalinks/
-
-# Themes are encouraged to use these universal variables
-# so be sure to set them if your theme uses them.
-#
-title : Florian Fendt
-tagline: statistics, data science, machine learning
-author :
-  name : Florian Fendt
-  email : flo_fendt@gmx.de
-  github : florianfendt
