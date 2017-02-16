@@ -1,8 +1,3 @@
----
-layout: page
-title: Personal Information
----
-
 # About
 
 I am a Masters student in Statistics at LMU Munich. Besides studying I'm
