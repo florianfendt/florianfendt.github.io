@@ -21,11 +21,15 @@ and the art of photography, well when I find the time.
 # Projects
 
 - [mlr](https://github.com/mlr-org/mlr)
+
   Machine Learning in R
+
   R package that provides a unified user interface for machine learning
   experiments.
 - [shiny-mlr](https://github.com/mlr-org/mlr_shiny)
+
   Graphical user interface that wraps the functionality of mlr in a web app.
+
   I started this project together with
   [Stefan Coors](https://github.com/Coorsaa) as a students project.
   Both of us love it so much, we can't stop enhancing and improving the app
