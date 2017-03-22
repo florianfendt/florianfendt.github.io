@@ -1,26 +1,24 @@
+authors:
+  flo:
+    display_name: Florian Fendt
+    email: flo_fendt@gmx.de
+    github: florianfendt
+title: Flo's Personal Webpage
+url: 'http://florianfendt.github.io'
+baseurl:
+port: 4444
+gems:
+  - jekyll-seo-tag
 
-title: My Personal Webpage
-url: ''http://florianfendt.github.io'
-baseurl: '' #change it according to your repository name
 
-
-# Enable one of these styles by removing #. Style will be applied only after restarting the build or serve.
-#style: styles-2
-#style: styles-3
-#style: styles-4
-#style: styles-5
-#style: styles-6
-
-
-#Profile information
+# Meta
 name: Florian Fendt
-tagline: Graduate Student
-pic: profile.png  #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
-
-#sidebar links
+tagline: Developer and Data Scientist
+pic: profile.png
 email: flo_fendt@gmx.de
 phone: 0049 163 4485979
-website: florianfendt.github.io #do not add http://
+website: florianfendt.github.io
 github: florianfendt
-
-#Update all the sections by editing the files inside _includes folder.
+instagram: flo_tographer
+facebook: Flo Et
+site.year: 2017
