@@ -1,0 +1,43 @@
+---
+layout: default
+---
+
+<section class="mysection">
+  <h2 class="section-title"><i class="fa fa-info-circle"></i>about me</h2>
+  <div class="mypar">
+  <p>
+    I am a Masters student in Statistics at LMU Munich.
+    Besides studying I'm working at our department's working group
+    Computational Statistics lead by Prof. Bernd Bischl.
+    My job mainly consists of organizing the course in
+    Computational Statistics.
+    I'm responsible for improving as well as creating
+    lecture slides and holding the tutorial each week to recap the
+    lecture and solve mathematical and programmatical exercises
+    with our students.
+    Besides teaching, the other part of my job is to contribute
+    to the R-package mlr (see Projects), created by my Professor
+    Bernd Bischl.
+    Besides loving my profession I also like travelling
+    and the art of photography, well when I find the time.
+  </p>
+  </div>
+</section>
+
+<section class="mysection">
+  <h2 class="section-title"><i class="fa fa-rss"></i>blog</h2>
+  <div class="posts">
+    {% for post in site.posts %}
+    {% unless post.draft %}
+    <article class="post">
+      <h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}
+      </a></h3>
+      <div class="entry">
+        {{ post.excerpt }}
+      </div>
+      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+    </article>
+    {% endunless %}
+    {% endfor %}
+  </div>
+</section>

@@ -1,4 +1,24 @@
-theme: jekyll-theme-architect
-# This is the default format.
-# For more see: http://jekyllrb.com/docs/permalinks/
-title: Florian Fendt
+authors:
+  flo:
+    display_name: Florian Fendt
+    email: flo_fendt@gmx.de
+    github: florianfendt
+title: Flo's Personal Webpage
+url: 'http://florianfendt.github.io'
+baseurl:
+port: 4444
+gems:
+  - jekyll-seo-tag
+
+
+# Meta
+name: Florian Fendt
+tagline: Developer and Data Scientist
+pic: profile.png
+email: flo_fendt@gmx.de
+phone: 0049 163 4485979
+website: florianfendt.github.io
+github: florianfendt
+instagram: flo_tographer
+facebook: Flo Et
+site.year: 2017

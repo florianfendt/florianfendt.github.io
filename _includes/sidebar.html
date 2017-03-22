@@ -1,0 +1,21 @@
+<div class="sidebar-wrapper">
+  <div class="profile-container">
+    <img
+      class="profile-img"
+      src="{{site.baseurl}}/assets/images/profile.png"
+      alt="profile picture"
+    />
+    <h1 class="name">{{site.name}}</h1>
+    <h3 class="tagline">{{site.tagline}}</h3>
+  </div>
+  <div class="link-container">
+    <ul class="list-unstyled sidebar-list">
+      <li class="sidebar-link"><i class="fa fa-home"></i> <a href="{{site.baseurl}}{% link index.html %}">Home</a></li>
+      <li class="sidebar-link"><i class="fa fa-book"></i><a href="{{site.baseurl}}{% link cv.html %}"> CV</a></li>
+    </ul>
+  </div>
+  <div class="contact-container">
+    {% include contact.html %}
+    {% include social.html %}
+  </div>
+</div>
