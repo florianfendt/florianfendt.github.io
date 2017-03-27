@@ -29,14 +29,16 @@ layout: default
   <div class="posts">
     {% for post in site.posts %}
     {% unless post.draft %}
-    <article class="post">
-      <h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}
-      </a></h3>
-      <div class="entry">
-        {{ post.excerpt }}
-      </div>
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </article>
+    <div class="mypar">
+        <article class="post">
+          <h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}
+          </a></h3>
+          <div class="entry">
+            {{ post.excerpt }}
+          </div>
+          <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+        </article>
+    </div>
     {% endunless %}
     {% endfor %}
   </div>

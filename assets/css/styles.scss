@@ -1,8 +1,12 @@
+---
+# Front matter comment to ensure Jekyll properly reads file.
+---
+
 body {
   font-family: 'Roboto', sans-serif;
   color: #545E6C;
   background: #f5f5f5;
-  font-size: 14px;
+  font-size: 16px;
   padding: 30px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -32,10 +36,10 @@ a:hover {
   cursor: pointer;
 }
 
-a:focus {
+/*a:focus {
   text-decoration:
 }
-
+*/
 p {
   line-height: 1.5;
 }
@@ -50,12 +54,19 @@ p {
 }
 
 .mypar {
+  font-family: 'Raleway', serif;
+/*  font-size: 17px;*/
+  font-weight: 400;
   padding: 10px;
   width: 90%;
   background: #F8F8F8;
   text-align: justify;
-  font-size: 15px;
   font-weight: 400;
+  -webkit-box-shadow: 0px 0px 1px #000;
+  -moz-box-shadow: 0px 0px 1px #000;
+  box-shadow: 0px 0px 1px #000;
+  border-radius: 4px;
+  margin-bottom: 30px;
 }
 
 .wrapper {
@@ -78,10 +89,45 @@ p {
   min-height: 700px;
   color: #fff;
   left: 0;
+  box-shadow: 4px 2px 6px rgba(0, 0, 0, 0.6);
 }
 
-.sidebar-wrapper a {
+.sidebar-wrapper .actionbtn {
+  display: block;
+  width: 170px;
+  height: 45px;
+  padding: 10px 10px;
+  background-color: #4fc949;
   color: #fff;
+  border-radius: 35px;
+  text-align: center;
+  vertical-align: middle;
+  margin-bottom: 40px;
+}
+
+.sidebar-wrapper .actionbtn:hover , .actionbtn:focus{
+  filter: none;
+  -webkit-filter: grayscale(0%);
+  background-color: #3fb13a;
+  text-decoration: none;
+}
+
+.sidebar-wrapper .linkbtn {
+  display: block;
+  width: 100%;
+  height: 40px;
+  padding: 10px 10px;
+  /*background-color: #4fc949;*/
+  color: #fff;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.sidebar-wrapper .linkbtn:hover , .linkbtn:focus{
+  filter: none;
+  -webkit-filter: grayscale(0%);
+  background-color: #1c5981;
+  text-decoration: none;
 }
 
 .sidebar-wrapper .profile-container {
@@ -100,21 +146,8 @@ p {
 }
 
 .sidebar-wrapper .link-container {
-  padding-left: 30px;
-  padding-top:  5px;
-  padding-bottom: 5px;
+  padding: 0px 0px;
   background: #2980b9;
-}
-
-.sidebar-wrapper .link-container .sidebar-list {
-  padding-bottom: 0px;
-  padding-top: : 0px;
-}
-
-
-.sidebar-wrapper .link-container .sidebar-list .li{
-  margin-bottom: 0px;
-  margin-top: 0px;
 }
 
 .sidebar-wrapper .contact-container {
@@ -137,15 +170,24 @@ p {
   margin-bottom: 15px;
 }
 
-.sidebar-wrapper .sidebar-list {
+/*.sidebar-wrapper .sidebar-list {
+  padding: 0;
   margin-bottom: 15px;
 }
 
-.sidebar-wrapper .sidebar-list .fa {
-  width: 20px;
-  margin-right: 8px;
+.sidebar-wrapper .link-container .sidebar-list .sidebar-link .fa {
+  padding-right: 0;
+  width: 30px;
+  margin-right: 2px;
   font-size: 18px;
-  padding-right: 5px;
+  vertical-align: middle;
+}*/
+
+/*.sidebar-wrapper .contact-container .sidebar-list .sidebar-link .fa {
+  padding-right: 0;
+  width: 30px;
+  margin-right: 4px;
+  font-size: 18px;
   vertical-align: middle;
 }
 
@@ -155,55 +197,51 @@ p {
 }
 
 .sidebar-wrapper .contact-container .sidebar-list li:last-child {
-  padding-left: 32px;
+  padding-left: 33px;
   margin-top: 1px;
   margin-bottom: 20px;
-}
+}*/
 
-.sidebar-wrapper .sidebar-list .sidebar-link .fa {
-  width: 25px;
-  font-size: 18px;
-}
 
 .sidebar-wrapper .social-container {
   display: block;
   vertical-align: middle;
   width: 240px;
+  padding-left: 5px;
   margin: 0 auto;
 }
 
 .sidebar-wrapper .social-icon {
   display: inline-block;
-  font-size: 24px;
-  width: 40px;
-  height: 30px;
+  font-size: 22px;
+  width: 45px;
+  height: 45px;
   text-align: center;
-  /*background-color: #fff;*/
+  vertical-align: middle;
+  border-radius: 100%;
+  background-color: #000;
+  padding-top: 5px;
+  margin-right: 8px;
 }
 
 .sidebar-wrapper .social-icon .fa {
-  background-color: #fff;
-  -webkit-text-stroke-width: 1px;
-}
-
-.sidebar-wrapper .social-icon .fa-github {
+  padding: 0 0 0 0;
+  vertical-align: middle;
+  background-color: #000;
+  color: #fff;
   border-radius: 100%;
-  color: #000;
-  padding-bottom: 1px;
-  -webkit-text-stroke-color: #000;
 }
 
-.sidebar-wrapper .social-icon .fa-facebook-square {
-  border-radius: 10px;
-  padding-bottom: 1px;
-  color: #3B5998;
-  -webkit-text-stroke-color: #3B5998;
+/*.sidebar-wrapper .social-icon .fa-github {
+  padding-top: 1px;
+}*/
+
+.sidebar-wrapper .social-icon .fa-facebook {
+  padding-top: 1px;
 }
 
 .sidebar-wrapper .social-icon .fa-instagram {
-  border-radius: 5px;
-  color: #8a3ab9;
-  -webkit-text-stroke-color:#8a3ab9;
+  padding-left: 1px;
 }
 
 .main-wrapper {
@@ -212,6 +250,7 @@ p {
   /*padding: 60px;*/
   padding-left: 300px;
   padding-top: 20px;
+  padding-right: 0px;
 }
 .main-wrapper .section-title {
   text-transform: uppercase;
@@ -297,15 +336,12 @@ p {
   font-weight: 400;
 }
 
-.post {
-  width: 90%;
-  background: #F8F8F8;
-  padding: 2px 5px;
-  border-radius: 1px;
+.post h1, h2, h3, h4, h5{
+  /*color: #6B6B6B;*/
 }
 
-.post h1, h2, h3, h4, h5{
-  color: #6B6B6B;
+.returnlink i {
+  padding-right: 4px;
 }
 
 .footer {
@@ -338,3 +374,5 @@ p {
     margin-bottom: 0;
   }
 }
+
+@import "highlights";

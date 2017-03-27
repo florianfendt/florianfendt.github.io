@@ -1,5 +1,4 @@
-# Local build workflow:
+# README for my personal Website
 
-* bundle exec jekyll serve
-* lsof -wni tcp:4444
-* kill -9 <PID>
+- If you find a typo or have proposal's for my website
+  feel free to contact me.

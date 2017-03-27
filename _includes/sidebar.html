@@ -9,13 +9,23 @@
     <h3 class="tagline">{{site.tagline}}</h3>
   </div>
   <div class="link-container">
-    <ul class="list-unstyled sidebar-list">
-      <li class="sidebar-link"><i class="fa fa-home"></i> <a href="{{site.baseurl}}{% link index.html %}">Home</a></li>
-      <li class="sidebar-link"><i class="fa fa-book"></i><a href="{{site.baseurl}}{% link cv.html %}"> CV</a></li>
-    </ul>
+    <a class="linkbtn" href="{{site.baseurl}}{% link index.html %}">
+      <i class="fa fa-home"></i> home
+    </a>
+<!--
+    </a>
+        <a class="linkbtn" href="mailto: {{site.email}}">
+      <i class="fa fa-envelope-o"></i> blog
+    </a>
+-->
+    <a class="linkbtn" href="{{site.baseurl}}{% link cv.html %}">
+      <i class="fa fa-book"></i> cv
+    </a>
   </div>
   <div class="contact-container">
-    {% include contact.html %}
+    <a class="actionbtn" href="mailto: {{site.email}}">
+      <i class="fa fa-envelope-o"></i> contact me
+    </a>
     {% include social.html %}
   </div>
 </div>
